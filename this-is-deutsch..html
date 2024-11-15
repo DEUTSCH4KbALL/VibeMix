@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <link rel="shortcut icon" href="./logo/photo_2024-11-13_14-21-23.jpg" type="image/x-icon">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Трек 1 - Ваш Сайт</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            background-color: #121212;
+            color: #ffffff;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+            background-color: #1db954;
+        }
+
+        h1 {
+            font-size: 1.5em;
+            margin: 0;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 15px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .track-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 40px;
+        }
+
+        .track-info {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .track-title {
+            font-size: 2em;
+            margin: 10px 0;
+        }
+
+        .track-artist {
+            font-size: 1.2em;
+            color: #b3b3b3;
+        }
+
+        .audio-player {
+            width: 100%;
+            max-width: 400px;
+            margin: 20px 0;
+            background-color: #282828;
+            border: none;
+            border-radius: 5px;
+        }
+
+        .track-description {
+            max-width: 600px;
+            text-align: center;
+            color: #b3b3b3;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #1db954;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+
+        #logo {
+            width: 130px;
+            height: auto;
+            border-radius: 20%;
+        }
+
+        @keyframes rotate {
+            0% {
+                transform: rotate(0deg);
+            }
+
+            100% {
+                transform: rotate(1080deg);
+                /* 3 полных оборота */
+            }
+        }
+
+        #logo:hover {
+            animation: rotate 3s ease-in-out forwards;
+            /* Анимация длится 3 секунды */
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <img src="./logo/photo_2024-11-13_14-21-23.jpg" alt="" id="logo">
+        <nav>
+            <ul>
+                <li><a href="./index.html">Главная</a></li>
+                <li><a href="./German-playlist.html">Немецкие Хиты</a></li>
+                <!-- Добавьте ссылки на другие треки -->
+            </ul>
+        </nav>
+    </header>
+
+    <div class="track-container">
+        <div class="track-info">
+            <h2 class="track-title">This is Deutsch</h2>
+            <p class="track-artist">Исполнитель: Eisbrecher</p>
+        </div>
+        <audio controls class="audio-player">
+            <source src="./This-is-deutsch/Eisbrecher - This Is Deutsch ( SITD Remix ).mp3" type="audio/mpeg">
+            Ваш браузер не поддерживает элемент audio.
+        </audio>
+        <p class="track-description">Описание трека This is Deutsch: Эта песня погружает вас в атмосферу времён Ⅱ
+            мировой войны</p>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 VibeMix</p>
+    </footer>
+</body>
+
+</html>
