@@ -1,0 +1,142 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #121212;
+    color: #ffffff;
+}
+
+header {
+    background: linear-gradient(90deg, #1db954, #1ed760);
+    padding: 20px 0;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 20px;
+}
+
+nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+section {
+    padding: 40px 20px;
+    margin: 20px;
+    background: #282828;
+    border-radius: 8px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+}
+
+h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+h3 {
+    font-size: 1.5em;
+    margin: 15px 0;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+audio {
+    width: 100%;
+    margin-top: 10px;
+}
+
+footer {
+    text-align: center;
+    padding: 20px 0;
+    background: #1a1a1a;
+    color: #b3b3b3;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+footer p {
+    margin: 0;
+}
+
+.music-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.music-item {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin: 10px 0;
+    padding: 15px;
+    transition: background-color 0.3s;
+}
+
+.music-item:hover {
+    background-color: #e0e0e0;
+}
+
+.track-title {
+    font-size: 1.5em;
+    color: #333;
+    margin: 0 0 10px;
+}
+
+.audio-player {
+    width: 100%;
+    outline: none;
+}
+
+.music-list {
+    list-style: none; /* Убираем маркеры списка */
+    padding: 0; /* Убираем отступы */
+}
+
+.music-item {
+    margin: 10px 0; /* Отступы между элементами списка */
+}
+
+.track-button {
+    display: inline-block; /* Делаем ссылку блочным элементом */
+    padding: 10px 15px; /* Отступы внутри кнопки */
+    background-color: #1DB954; /* Цвет фона (зеленый Spotify) */
+    color: white; /* Цвет текста */
+    text-decoration: none; /* Убираем подчеркивание */
+    border-radius: 25px; /* Округлые углы */
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Плавные переходы */
+    font-weight: bold; /* Жирный текст */
+}
+
+.track-button:hover {
+    background-color: #1ed760; /* Более светлый зеленый при наведении */
+    transform: scale(1.05); /* Увеличиваем размер при наведении */
+}
+
+.track-button:active {
+    transform: scale(0.95); /* Уменьшаем размер при нажатии */
+}

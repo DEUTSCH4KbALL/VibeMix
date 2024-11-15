@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <link rel="shortcut icon" href="./logo/photo_2024-11-13_14-21-23.jpg" type="image/x-icon">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phonk - VibeMix</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            background-color: #121212;
+            color: #ffffff;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+            background-color: #1db954;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+        }
+
+        h1 {
+            font-size: 1.5em;
+            margin: 0;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 15px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #b3b3b3;
+        }
+
+        .playlist-container {
+            padding: 40px;
+            background: linear-gradient(180deg, #282828 0%, #6600ff 30px, #121212 100%);
+            border-radius: 10px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+            max-width: 800px;
+            margin: 40px auto;
+        }
+
+        .playlist-title {
+            text-align: center;
+            font-size: 2.5em;
+            margin-bottom: 20px;
+            text-shadow: 0 1px 3px rgba(0, 0, 0, 0.7);
+        }
+
+        .track-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px;
+            border-bottom: 1px solid #333;
+        }
+
+        .track-title {
+            font-size: 1.5em;
+            margin: 0;
+        }
+
+        .track-artist {
+            color: #b3b3b3;
+        }
+
+        .track-link {
+            color: #1db954;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .track-link:hover {
+            text-decoration: underline;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #1db954;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+            box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.5);
+        }
+
+        #logo {
+            width: 130px;
+            height: auto;
+            border-radius: 20%;
+        }
+
+        @keyframes rotate {
+            0% {
+                transform: rotate(0deg);
+            }
+
+            100% {
+                transform: rotate(1080deg);
+                /* 3 полных оборота */
+            }
+        }
+
+        #logo:hover {
+            animation: rotate 3s ease-in-out forwards;
+            /* Анимация длится 3 секунды */
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <img src="./logo/photo_2024-11-13_14-21-23.jpg" alt="" id="logo">
+        <nav>
+            <ul>
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="German-playlist.html">Немецкий Плейлист</a></li>
+                <li><a href="track1.html">Funk do bounce</a></li>
+                <li><a href="track2.html">vyrval - ✻h+3+яд✻7lucjio0t6</a></li>
+                <li><a href="Me.html">Песни автора (Piano)</a></li>
+                <!-- Добавьте ссылки на другие треки -->
+            </ul>
+        </nav>
+    </header>
+
+    <div class="playlist-container">
+        <h2 class="playlist-title">Phonk Плейлист</h2>
+        <div class="track-item">
+            <div>
+                <h3 class="track-title">Be tough - Slowed</h3>
+                <p class="track-artist">Исполнитель: Glxxmstrider</p>
+            </div>
+            <a href="./be_tough.html" class="track-link">Слушать</a>
+        </div>
+        <div class="track-item">
+            <div>
+                <h3 class="track-title">Void (super sloved)</h3>
+                <p class="track-artist">Исполнитель: Isq</p>
+            </div>
+            <a href="./void.html" class="track-link">Слушать</a>
+        </div>
+        <div class="track-item">
+            <div>
+                <h3 class="track-title">Vozes</h3>
+                <p class="track-artist">Исполнитель: Montagem</p>
+            </div>
+            <a href="./montagem1.html" class="track-link">Слушать</a>
+        </div>
+        <div class="track-item">
+            <div>
+                <h3 class="track-title">Encubada</h3>
+                <p class="track-artist">Исполнитель: Louca</p>
+            </div>
+            <a href="./Encubada.html" class="track-link">Слушать</a>
+        </div>
+        <div class="track-item">
+            <div>
+                <h3 class="track-title">Phonk Killer</h3>
+                <p class="track-artist">Исполнитель: Automotivo</p>
+            </div>
+            <a href="./Killer.html" class="track-link">Слушать</a>
+        </div>
+        <div class="track-item">
+            <div>
+                <h3 class="track-title">Funk of Suffering</h3>
+                <p class="track-artist">Исполнитель: Sxid</p>
+            </div>
+            <a href="./sxid.html" class="track-link">Слушать</a>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 VibeMix</p>
+    </footer>
+</body>
+
+</html>
